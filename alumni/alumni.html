@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css
+
+
+
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+    <style>
+
+        #team
+        {
+            text-align: center;
+            color: #535353;
+            padding-top: 50px;
+            background-color: #f7f7f7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #team h5
+        {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color:#ff1737;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        #team h2
+        {
+            font-size:2.5rem ;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.2;
+            max-width: 720px;
+            margin: 0 auto 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+        #team p .desc
+        {
+            max-width: 950px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+        ul, ol
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a:hover
+        {
+            text-decoration: none;
+        }
+        .designation
+        {
+            font-size: 17px;   
+        }
+        .team-social li
+        {
+            display: inline-block;
+        }
+        .team-social li a
+        {
+            font-size: 14px;
+            color: #18191d;
+            height: 38px;
+            width: 38px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+            border: 1px solid transparent;
+            border-radius: 50%;
+        }
+        .team-img
+        {
+            position: relative;
+        }
+        .team-social.white-bg li a
+        {
+            background: white;
+        }
+        .team-coverflow
+        {
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            width: 100%;
+            max-width: 370px;
+            margin: 0 auto;
+            background: white;
+        }
+        .team-coverflow .team-text
+        {
+            text-align: center;
+            font-size: 14px;
+            padding: 2rem 0 2.5rem 0;
+        }
+        .team-coverflow .team-text h5
+        {
+            font-size: 1.5rem;
+
+        }
+        .swiper-slide-active .team-coverflow:hover .team-box-content
+        {
+            opacity: 1;
+            visibility: visible;
+            border-radius: 0;
+            bottom: 0;
+        }
+        .team-box-content
+        {
+            background-color: yellow;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            padding: 20px 0;
+            bottom: -20%;
+            z-index: 1;
+            transition: all linear .4s;
+        }
+        .team-coverflow .team-img
+        {
+            overflow: hidden;
+            width: 100%;
+        }
+        .swiper-slide-active .team-coverflow:hover img
+        {
+            transform: scale(1.1);
+        }
+        .team-progress .progress-item:not(:last-child)
+        {
+            margin-bottom: 2rem;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>A passionate Team</h5>
+                    <h2>Awesome Leaders</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci delectus aspernatur iste quaerat omnis! Sed, magni! Atque, maxime natus quo accusantium veritatis, eaque soluta explicabo modi obcaecati voluptatibus consectetur velit?
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="swiper-container team-member-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="team-coverflow">
+                                    <div class="team-data-img">
+                                        <div class="team-img">
+                                            <img src="img/b.jpg" alt="pic">
+                                            <div class="team-box-content">
+                                                <ul class="team-social white-bg">
+                                                    <li><a href=""><i class="ti ti-facebook"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-twitter-alt"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-google"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="team-text">
+                                        <h4 class="color-black font-weight-normal m-0 text-capitalize">Susen</h4>
+                                        <p class="color-light-grey font-weight-light designation text-capitalize">CEO & Founder</p>
+                                    </div>
+
+                                    <!-- <ul class="team-progress text-left">
+                                        <li class="progress-item">
+                                            <h5>Project Managment <span class="float-right"><b class="count">82</b>%</span></h5>
+                                            <div class="progress-bar">
+
+                                            </div>
+                                        </li>
+                                    </ul> -->
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="team-coverflow">
+                                    <div class="team-data-img">
+                                        <div class="team-img">
+                                            <img src="img/c.jpg" alt="">
+                                            <div class="team-box-content">
+                                                <ul class="team-social white-bg">
+                                                    <li><a href=""><i class="ti ti-facebook"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-twitter-alt"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-google"></i></a></li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="team-text">
+                                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Susen</h4>
+                                    <p class="color-light-grey font-weight-light designation text-capitalize">CEO & Founder</p>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="team-coverflow">
+                                    <div class="team-data-img">
+                                        <div class="team-img">
+                                            <img src="img/c.jpg" alt="">
+                                            <div class="team-box-content">
+                                                <ul class="team-social white-bg">
+                                                    <li><a href=""><i class="ti ti-facebook"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-twitter-alt"></i></a></li>
+                                                    <li><a href=""><i class="ti ti-google"></i></a></li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="team-text">
+                                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Susen</h4>
+                                    <p class="color-light-grey font-weight-light designation text-capitalize">CEO & Founder</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-button-next slider-arrows">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="swiper-button-prev slider-arrows">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js
+
+
+
+    "></script>
+</body>
+</html>
