@@ -1,0 +1,49 @@
+.services
+{
+    background-image: url(/combine/img1/bg2.jpg);
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-attachment: fixed;
+}
+.services h2
+{
+    font-family: 'Courier New', Courier, monospace;   
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.services p
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.services a
+{
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+    border: 2px solid white;
+}
+.services a:hover
+{
+    padding: 15px 30px;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 13px;
+}
