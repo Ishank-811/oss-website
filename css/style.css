@@ -1,16 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
- Theme Name: Coco
- Theme URI: http://
- Description: The Multi-Purpose Onepage Template
- Author: ui-themez
- Author URI: http://themeforest.net/user/ui-themez
- Version: 1.0
-
- Main Color   : #1A237E , #2576FD
- main Font    : Rubik
-
------------------------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
 
@@ -24,10 +12,7 @@
 	06 Process
 	07 Works
 	08 why-us
-	09 Team
 	10 Testimonials
-	11 Price
-	12 Blog
 	13 Call-action
 	14 Contact
 	15 Footer
@@ -241,10 +226,7 @@ a:hover {
     transform: translate(0%, -50%);
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 15px;
-    line-height: .7;
-}
+
 
 .owl-theme .owl-dots .owl-dot span {
     width: 8px;
@@ -427,70 +409,6 @@ a:hover {
      [ 03 Start Navbar ]
 -----------------------------------------------------------------*/
 
-.navbar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    border: 0;
-    background: transparent;
-    z-index: 9;
-    min-height: 70px;
-}
-
-.navbar .icon-bar {
-    color: #fff;
-}
-
-.navbar .navbar-nav .nav-link {
-    font-size: 13px;
-    font-weight: 500;
-    color: #eee;
-    letter-spacing: .5px;
-    margin: 15px 5px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-
-.navbar .navbar-nav .active {
-    color: #2576FD !important;
-}
-
-.nav-scroll {
-    background: #fff;
-    -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-    padding: 0;
-    position: fixed;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-}
-
-.nav-scroll .icon-bar {
-    color: #222;
-}
-
-.nav-scroll .navbar-nav .nav-link {
-    color: #222;
-}
-
-.nav-scroll .navbar-nav .logo {
-    padding: 15px 0;
-    color: #111;
-}
-
-.logo {
-    padding: 15px 0;
-    width: 100px;
-}
-
 /* ----------------------------------------------------------------
      [ End Navbar ]
 -----------------------------------------------------------------*/
@@ -502,6 +420,15 @@ a:hover {
 .header {
     min-height: 100vh;
     position: relative;
+    background-image: url('../img/bg3.jpg');
+}
+.header {
+    min-height: 100vh;
+    position: relative;
+   width:100%;
+    clip-path: polygon(100% 0%, 100% 93% , 50% 100% , 0 93% , 0 0 );
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header.video {
@@ -516,7 +443,7 @@ a:hover {
     font-size: 50px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 4px;
+       letter-spacing: 4px;
     -webkit-animation-delay: .2s;
     animation-delay: .2s;
 }
@@ -724,25 +651,10 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.tabs-section .nav-pills {
-    padding: 0;
-}
 
-.tabs-section .nav-pills .nav-link {
-    background-color: #f2f2f2;
-    padding: 12px 40px;
-    border-right: 1px solid #eee;
-    border-top: 2px solid transparent;
-    border-radius: 0;
-    position: relative;
-    z-index: 5;
-}
 
-.tabs-section .nav-pills .nav-link.active {
-    border-top-color: #1A237E;
-    background-color: #fff;
-    color: #1A237E;
-}
+
+
 
 .tabs-section .tab-content .left {
     padding: 0;
@@ -994,6 +906,7 @@ a:hover {
      [ 07 Start Works ]
 -----------------------------------------------------------------*/
 
+
 .works .filtering .filter {
     display: inline-block;
     padding: 4px 10px;
@@ -1152,74 +1065,6 @@ a:hover {
      [ End why-us ]
 -----------------------------------------------------------------*/
 
-/* ----------------------------------------------------------------
-     [ 09 Start Team ]
------------------------------------------------------------------*/
-
-.team .item:hover .team-img:after {
-    opacity: .8;
-}
-
-.team .item:hover .social {
-    bottom: 30%;
-}
-
-.team .item .team-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.team .item .team-img:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2576FD;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1A237E), to(#2576FD));
-    background: linear-gradient(to bottom, #1A237E, #2576FD);
-    opacity: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
-
-.team .item .social {
-    position: absolute;
-    bottom: -30%;
-    left: 0;
-    width: 100%;
-    padding: 30px 15px;
-    text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 3;
-}
-
-.team .item .social a {
-    color: #fff;
-    margin: 0 15px;
-}
-
-.team .item .info {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.team .item .info h6 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.team .item .info span {
-    color: #777;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-/* ----------------------------------------------------------------
-     [ End Team ]
------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
      [ 10 Start Testimonials ]
@@ -1279,167 +1124,6 @@ a:hover {
      [ End Testimonials ]
 -----------------------------------------------------------------*/
 
-/* ----------------------------------------------------------------
-     [ 11 Start Price ]
------------------------------------------------------------------*/
-
-.price .item {
-    padding: 50px 15px;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.price .type h4 {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.price .value {
-    margin-bottom: 30px;
-}
-
-.price .value h3 {
-    font-size: 50px;
-    display: inline-block;
-    position: relative;
-}
-
-.price .value h3 span {
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: -10px;
-}
-
-.price .features {
-    margin-bottom: 30px;
-}
-
-.price .features li {
-    font-size: 13px;
-    color: #777;
-    margin-bottom: 12px;
-}
-
-.price .features li:last-child {
-    margin-bottom: 0;
-}
-
-.price .active {
-    -webkit-box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
-    background-color: #1A237E;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1A237E), to(#2576FD));
-    background: linear-gradient(to bottom, #1A237E, #2576FD);
-    color: #fff;
-}
-
-.price .active .features li {
-    color: #eee;
-}
-
-.price .active .butn span {
-    color: #1A237E;
-}
-
-.price .butn {
-    padding: 10px 30px;
-}
-
-.price .butn span {
-    font-size: 12px;
-}
-
-/* ----------------------------------------------------------------
-     [ End Price ]
------------------------------------------------------------------*/
-
-/* ----------------------------------------------------------------
-     [ 12 Start Blog ]
------------------------------------------------------------------*/
-
-.blog .item {
-    -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
-    padding: 15px;
-}
-
-.blog .item .post-img {
-    overflow: hidden;
-}
-
-.blog .item .post-img:hover .img {
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-}
-
-.blog .item .post-img .img {
-    -webkit-transition: all .4s;
-    transition: all .4s;
-}
-
-.blog .item .cont {
-    padding: 30px 0 15px;
-}
-
-.blog .item .cont h6 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.blog .item .info {
-    font-size: 10px;
-    color: #999;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.blog .item .info a {
-    margin-right: 10px;
-}
-
-.blog .item .info a:last-child {
-    margin-right: 0;
-}
-
-.blog .item .info .tag {
-    padding: 4px;
-    background-color: #1A237E;
-    color: #fff;
-    float: right;
-    line-height: 1;
-}
-
-.blog .item .more {
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-.blog .item .more:hover {
-    color: #1A237E;
-}
-
-.blog .item .more:hover i {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.blog .item .more i {
-    font-size: 10px;
-    -webkit-transform: translateX(-15px);
-    transform: translateX(-15px);
-    opacity: 0;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-
-/* ----------------------------------------------------------------
-     [ End Blog ]
------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
      [ 13 Start Call-action ]
@@ -1592,34 +1276,16 @@ footer p {
     .bg-fixed {
         background-attachment: scroll !important;
     }
-    .navbar {
-        padding-left: 15px;
-    }
-    .navbar .navbar-collapse {
-        max-height: 340px;
-        overflow: auto;
-        background: #111;
-        text-align: center;
-        padding: 10px 0;
-    }
-    .navbar .nav-link {
-        margin: 10px auto !important;
-    }
-    .nav-scroll .navbar-toggler {
-        margin-right: 15px;
-    }
-    .nav-scroll .navbar-collapse .nav-link {
-        color: #fff !important;
-    }
-    .nav-scroll .navbar-collapse .active {
-        color: #1A237E !important;
-    }
+    
+
     .header {
         background-attachment: scroll !important;
         background-position: 50% 0% !important;
     }
     .header .caption h4 {
         font-size: 30px;
+
+        
     }
     .header .caption h1 {
         font-size: 45px;
@@ -1654,13 +1320,7 @@ footer p {
     .hero .extra-title {
         font-size: 22px;
     }
-    .tabs-section .nav-pills .nav-link {
-        padding: 12px 0;
-    }
-    .tabs-section .nav-pills .nav-item {
-        width: 33.33333%;
-        text-align: center;
-    }
+   
     .works .filtering .filter {
         padding: 0;
     }
